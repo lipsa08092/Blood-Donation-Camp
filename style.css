@@ -1,0 +1,52 @@
+
+        /* @import "tailwindcss"; */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #e11d48 0%, #dc2626 100%);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+        
+        .donation-step {
+            position: relative;
+        }
+        
+        @media (min-width: 1024px) {
+            .donation-step:not(:last-child):after {
+                content: '';
+                position: absolute;
+                right: -32px;
+                top: 50%;
+                width: 64px;
+                height: 2px;
+                background: #e11d48;
+            }
+        }
+        
+        /* Optimized for laptop screens */
+        .container-xl {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .text-balance {
+            text-wrap: balance;
+        }

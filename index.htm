@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeStream Blood Donation Camp - Save Lives Together</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="container-xl px-6">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-heartbeat text-primary text-2xl mr-2"></i>
+                        <span class="font-bold text-xl text-primary">LifeStream</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition">About</a>
+                    <a href="#camp" class="text-gray-700 hover:text-primary transition">Camp Details</a>
+                    <a href="#register" class="text-gray-700 hover:text-primary transition">Register</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary transition">FAQ</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white pt-24 pb-16">
+        <div class="container-xl px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl lg:text-5xl font-bold mb-6 text-balance">Your Blood Can Save Lives</h1>
+                    <p class="text-lg lg:text-xl mb-8 opacity-90">Join our blood donation camp and become a hero in someone's life story. Every drop counts towards building a healthier community.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#register" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition pulse-animation">
+                            Register Now
+                        </a>
+                        <a href="#camp" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div>
+                            <img src="FIRSTimage.png" alt="Diverse group of people donating blood together in a clean, modern medical environment with healthcare professionals" class="rounded-xl shadow-2xl w-full max-w-md" />
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 bg-white text-primary p-4 rounded-lg shadow-lg">
+                            <div class="text-center">
+                                <div class="text-xl font-bold">127+</div>
+                                <div class="text-sm">Lives Saved</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="bg-white py-16">
+        <div class="container-xl px-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center stat-card p-6 rounded-lg bg-secondary/20">
+                    <i class="fas fa-users text-3xl text-primary mb-4"></i>
+                    <div class="text-2xl font-bold text-dark">2,500+</div>
+                    <div class="text-sm text-gray-600">Donors Registered</div>
+                </div>
+                <div class="text-center stat-card p-6 rounded-lg bg-secondary/20">
+                    <i class="fas fa-syringe text-3xl text-primary mb-4"></i>
+                    <div class="text-2xl font-bold text-dark">1,800+</div>
+                    <div class="text-sm text-gray-600">Successful Donations</div>
+                </div>
+                <div class="text-center stat-card p-6 rounded-lg bg-secondary/20">
+                    <i class="fas fa-hospital text-3xl text-primary mb-4"></i>
+                    <div class="text-2xl font-bold text-dark">12+</div>
+                    <div class="text-sm text-gray-600">Partner Hospitals</div>
+                </div>
+                <div class="text-center stat-card p-6 rounded-lg bg-secondary/20">
+                    <i class="fas fa-heart text-3xl text-primary mb-4"></i>
+                    <div class="text-2xl font-bold text-dark">24/7</div>
+                    <div class="text-sm text-gray-600">Emergency Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container-xl px-6">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold text-dark mb-4">Why Your Donation Matters</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Every blood donation can save up to three lives. Your contribution makes a real difference in emergency situations, surgeries, and ongoing medical treatments.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Emergency Response</h3>
+                    <p class="text-gray-600 text-sm">Blood donations are crucial for accident victims, emergency surgeries, and critical care patients.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-baby text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Maternal Care</h3>
+                    <p class="text-gray-600 text-sm">Helps mothers during childbirth complications and supports newborn babies in need.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-prescription-bottle text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-3">Chronic Illness</h3>
+                    <p class="text-gray-600 text-sm">Supports patients with cancer, anemia, and other conditions requiring regular transfusions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camp Details Section -->
+    <section id="camp" class="py-16 bg-white">
+        <div class="container-xl px-6">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-dark mb-6">Blood Donation Camp Details</h2>
+                    
+                    <div class="space-y-5">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="fas fa-calendar-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Date & Time</h4>
+                                <p class="text-gray-600">September 10, 2025 | 9:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Location</h4>
+                                <p class="text-gray-600">Kalothia, Bhubaneswar</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="fas fa-clock text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Duration</h4>
+                                <p class="text-gray-600">Approximately 45-60 minutes per donation</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="fas fa-utensils text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">Refreshments</h4>
+                                <p class="text-gray-600">Healthy snacks and drinks provided after donation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div>
+                        <img src="SECONDimage.png" alt="Modern medical facility with comfortable donor chairs, friendly staff, and organized blood donation equipment setup" class="rounded-xl w-full" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="py-16 bg-primary/5">
+        <div class="container-xl px-6 max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Register as a Donor</h2>
+                <p class="text-lg text-gray-600">Join our life-saving mission. Fill out the form below to schedule your donation.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <form id="donorForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Blood Group *</label>
+                            <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent+">
+                                <option value="">Select Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Preferred Time Slot *</label>
+                        <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <option value="">Select Time Slot</option>
+                            <option value="9:00-10:00">9:00 AM - 10:00 AM</option>
+                            <option value="10:00-11:00">10:00 AM - 11:00 AM</option>
+                            <option value="11:00-12:00">11:00 AM - 12:00 PM</option>
+                            <option value="12:00-13:00">12:00 PM - 1:00 PM</option>
+                            <option value="13:00-14:00">1:00 PM - 2:00 PM</option>
+                            <option value="14:00-15:00">2:00 PM - 3:00 PM</option>
+                            <option value="15:00-16:00">3:00 PM - 4:00 PM</option>
+                            <option value="16:00-17:00">4:00 PM - 5:00 PM</option>
+                        </select>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input type="checkbox" id="terms" required class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+                        <label for="terms" class="ml-2 text-sm text-gray-600">I confirm that I meet the eligibility criteria for blood donation</label>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-primary text-white py-4 px-6 rounded-lg font-semibold hover:bg-accent transition">
+                        Register Now
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 bg-white">
+        <div class="container-xl px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-dark mb-4">The Donation Process</h2>
+                <p class="text-lg text-gray-600">Simple, safe, and life-changing. Here's what to expect during your donation.</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="donation-step text-center max-w-xs">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-primary">1</span>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-4">Registration</h3>
+                    <p class="text-gray-600">Complete quick paperwork and show your ID.</p>
+                </div>
+                
+                <div class="donation-step text-center max-w-xs">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-primary">2</span>
+                </div>
+                    <h3 class="text-lg font-semibold mb-4">Health Check</h3>
+                    <p class="text-gray-600">Brief health screening and iron level test.</p>
+                </div>
+                
+                <div class="donation-step text-center max-w-xs">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-primary">3</span>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-4">Donation</h3>
+                    <p class="text-gray-600">Comfortable donation takes 8-10 minutes.</p>
+                </div>
+                
+                <div class="text-center max-w-xs">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-primary">4</span>
+                    </div>
+                    <h3 class="text-lg font-semib极 mb-4">Refreshments</h3>
+                    <p class="text-gray-600">Enjoy snacks and drinks while you relax after donation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container-xl px-6">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold text-dark mb-4">Are You Eligible?</h2>
+                <p class="text-lg text-gray-600">Check if you meet the requirements to become a blood donor.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-primary">Basic Requirements</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Age</h4>
+                                <p class="text-gray-600">18-65 years old (16-17 with parental consent)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Weight</h4>
+                                <p class="text-gray-600">Minimum 50 kg</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Health</h4>
+                                <p class="text-gray-600">Good general health on donation day</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Frequency</h4>
+                                <p class="text-gray-600">Every 56 days for whole blood donation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-primary">Temporary Deferrals</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-yellow-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Recent Illness</h4>
+                                <p class="text-gray-600">Wait until fully recovered from cold/flu</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-yellow-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Travel</h4>
+                                <p class="text-gray-600">Some travel destinations may require waiting period</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-yellow-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Medications</h4>
+                                <p class="text-gray-600">Certain medications may require waiting period</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-yellow-500 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold">Pregnancy</h4>
+                                <p class="text-gray-600">Wait 6 weeks after delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container-xl px-6">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold text-dark mb-4">Heroes Among Us</h2>
+                <p class="text-lg text-gray-600">Hear from our dedicated donors and recipients.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Mahaprasad sahu</h4>
+                            <p class="text-primary text-sm">Regular Donor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic text-sm">"Donating blood is my way of giving back. The staff is always professional and makes the process comfortable. Knowing I'm helping save lives keeps me coming back every 8 weeks."</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Deepak Kumar dey</h4>
+                            <p class="text-primary text-sm">First-time Donor</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic text-sm">"I was nervous about my first donation, but the team made me feel so at ease. The process was quick and painless. I'll definitely be donating regularly from now on!"</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-primary"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Malaya Panda</h4>
+                            <p class="text-primary text-sm">Blood Recipient</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic text-sm">"After my surgery, I needed multiple blood transfusions. Thanks to generous donors, I recovered fully. Your donation truly makes a difference in people's lives."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-100">
+        <div class="container-xl px-6 max-w-4xl">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold text-dark mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">Get answers to common questions about blood donation.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3 text-primary">How often can I donate blood?</h3>
+                    <p class="text-gray-600 text-sm">You can donate whole blood every 56 days (8 weeks). Platelet donations can be made more frequently - up to 24 times per year.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3 text-primary">Does it hurt to donate blood?</h3>
+                    <p class="text-gray-600 text-sm">You may feel a brief pinch when the needle is inserted, but most donors report feeling little to no pain during the donation process itself.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3 text-primary">How long does the process take?</h3>
+                    <p class="text-gray-600 text-sm">The entire process takes about 45-60 minutes. The actual blood donation typically takes only 8-10 minutes.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3 text-primary">What should I do before donating?</h3>
+                    <p class="text-gray-600 text-sm">Eat a healthy meal and drink plenty of fluids before your donation. Get a good night's sleep and avoid fatty foods for 24 hours beforehand.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3 text-primary">Is it safe to donate blood?</h3>
+                    <p class="text-gray-600 text-sm">Yes, blood donation is extremely safe. All equipment is sterile, used only once, and disposed of properly after each donation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 hero-gradient text-white">
+        <div class="container-xl px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Make a Difference?</h2>
+            <p class="text-lg mb-8 opacity-90">Your single donation can save up to three lives. Join thousands of heroes who have already made the commitment to save lives.</p>
+            <a href="#register" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition inline-block">
+                Register to Donate Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container-xl px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-heartbeat text-primary mr-2"></i>
+                        <span class="font-bold">LifeStream</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">Dedicated to saving lives through blood donation and community health initiatives.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition text-sm">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition text-sm">About Us</a></li>
+                        <li><a href="#camp" class="text-gray-400 hover:text-white transition text-sm">Camp Details</a></li>
+                        <li><a href="#register" class="text-gray-400 hover:text-white transition text-sm">Register</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition text-sm">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">Kalothia, Bhubaneswar</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-primary mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-3 text-sm"></i>
+                            <span class="text-gray-400 text-sm">info@lifestream.org</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Emergency Contact</h4>
+                    <p class="text-gray-400 text-sm mb-3">For urgent blood requirements or emergencies:</p>
+                    <div class="bg-primary/10 p-3 rounded-lg">
+                        <p class="font-semibold text-sm">24/7 Hotline</p>
+                        <p class="font-bold">1-800-BLOOD-HELP</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 LifeStream Blood Donation Camp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
