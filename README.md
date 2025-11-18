@@ -1,7 +1,7 @@
 ## Blood Donation Camp
 A web project to promote voluntary blood donation and manage donation events.
 
-## 🩸About the Project
+## About the Project
 
 - The Blood Donation Camp project is designed to raise awareness about blood donation, encourage people to become donors, and make it easy to register for blood donation events.
 - This project can be used for NGOs, hospitals, colleges, or community groups organizing blood donation drives.
